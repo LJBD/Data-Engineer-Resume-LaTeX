@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Software}\\\textbf{Engineering},
+        \textbf{~~~~~~DevOps~~~~~~},
+        \textbf{Networks},
+        \textbf{~~~~~Linux~~~~~},
+        \textbf{~~~~~CI/CD~~~~~},
+        Scrum\\Master,
+        \textbf{~~~~~~Git~~~~~~}
+    }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$  SQL $\textbullet$ Terraform $\textbullet$ \large \LaTeX / 1}, {Bash $\textbullet$ Groovy / 2}, {Python / 5}}
+
+% Projects text
+\education{
+\textbf{MSc., Automatics \& Robotics} (GPA: 5.0) \\
+Spec.: Computer Control Systems / Neurocybernetics \\
+AGH University of Science \& Technology \\
+2015 - 2017 | Kraków, Poland
+
+\textbf{BSc., Automatics \& Robotics} (GPA: 4.5) \\
+AGH University of Science \& Technology \\
+2011 - 2015 | Kraków, Poland
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{ŁUKASZ DUDEK} % Your name
+\cvjobtitle{ Software Engineer } % Job title/career
+
+\cvlinkedin{/in/ljbdudek}
+\cvgithub{LJBD}
+\cvnumberphone{(+48) 663361144} % Phone number
+\cvsite{} % Personal website
+\cvmail{ljbdudek@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+\section{About me}
+
+An automation \& open-sourceness enthusiast, I'm an all-round software engineer curious about every aspect of technology stacks in front of me.
+I love devising \& discussing improvements, both for software and processes.
+Being a good team player, I care about the quality of communication with those around me.
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Oct 2017 -}
+		{Present}
+        {DevOps/QA Engineer}
+        {\href{http://www.silvair.com/}{Silvair}}
+        {}
+        {\begin{itemize}
+        \item Designing \& developing CI/CD pipelines in Jenkins for embedded firmware teams.
+        \item Designing \& developing automation tools in Python 3.5+ across the technology stack (from hardware utilities, through systems administration to web platform clients).
+        \item Raising Python code quality in the entire company (unit tests, PyLint, black, Sphinx).
+        \item Introducing good DevOps practices.
+        \item Acting as a Scrum Master in a small team.
+        \\\\
+        \textbf{Tools:} Jenkins, Docker, AWS (S3, EC2, Athena), Debian/Ubuntu, Behave, Flask, Terraform, GitHub, Jira
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Jan 2015 -}
+		{Aug 2017}
+        {Control Systems Engineer}
+        {\href{http://www.synchrotron.uj.edu.pl/en}{NRSC SOLARIS, Jagiellonian University}}
+        {}
+        {
+        {\begin{itemize}
+        \item Managing distributed control systems based on TANGO Controls framework and its services (eg. archiving, supervision, back-end diagnostics).
+        \item Designing and writing device drivers \& client applications in Python 2.7/3.5 for a distributed control system.
+        \item Participating in open-source projects across Europe, co-authoring talks \& posters for conferences.
+        \item Introducing good team practises and programming styles.
+    	\\\\
+    	\textbf{Tools:} TANGO Controls, PyQt, MySQL, Jenkins, Docker, CentOS, VMWare, GitLab
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{Aug 2016 -}
+		{Dec 2016}
+        {Software Engineer}
+        {\href{http://www.eaiib.agh.edu.pl/}{AGH University of Science \& Technology}}
+        {}
+        {
+        {\begin{itemize}
+        \item Project: TANGO Controls Industralisation.
+        \item Developing device drivers for industry protocols \& a SCADA application in Python 2.7.
+        \\\\
+        \textbf{Tools:} TANGO Controls, PyQt, OPC UA, Modbus, SCPI, BACNet-IP
+    \end{itemize}}
+        }
+     \\
+     \twentyitem
+   		{Mar 2016 -}
+		{Nov 2016}
+        {Software Engineer}
+        {\href{http://www.fais.uj.edu.pl/en\_GB/homepage}{Jagiellonian University}}
+        {}
+        {
+        \begin{itemize}
+        \item Project: StageEye - a prototype of a system positioning elements on a stage.
+        \item Developing a laser driver \& a mobile application with web backend - all in Python 2.7.
+        \\\\
+        \textbf{Tools:} TANGO Controls, Flask, MongoDB, Kivy
+    \end{itemize}
+    	}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+
+\end{document} 
